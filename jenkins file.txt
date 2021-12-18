@@ -1,24 +1,21 @@
 pipeline{
-agent any
-stages
-{
-stage('Build')
-{
-steps{
-echo "Building the project......"
-}
-}
-stage('Test')
-{
-steps{
-echo "Testing the project......"
-}
-}
-stage('deploye')
-{
-steps{
-echo "deploying the project......"
-}
-}
-}
+      stage('build')
+	  {
+	     echo "building the project........... "
+	   }
+	  
+	   stage('deploye')
+	  {
+	     echo "deployeing the project........... "
+	   }
+	  
+	   stage('test')
+	  {
+	     echo "testing the project........... "
+	   }
+	  
+	   stage('release')
+	  {
+	     echo "realesing the project........... "
+	   }
 }
